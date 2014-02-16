@@ -1,15 +1,23 @@
 package com.example.TestApp;
 
+import android.app.ActionBar;
 import android.app.Activity;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.Intent;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class MyActivity extends Activity {
     public final static String EXTRA_MESSAGE = "com.example.MyFirstApp.MESSAGE";
+    private final static int CONNECTION_FAILURE_RESOLUTION_REQUEST = 9000;
 
 
     private TextView latituteField;
@@ -42,5 +50,11 @@ public class MyActivity extends Activity {
         startActivity(intent);
     }
 
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_activity_actions, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 }
