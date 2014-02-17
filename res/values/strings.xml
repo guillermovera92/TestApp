@@ -9,4 +9,7 @@
     <string name="picture">Show me a picture</string>
     <string name="action_search">Search</string>
     <string name="action_settings">Settings</string>
+    <string name="gps">Go to GPS</string>
+    <string name="coordinates">GPS Coordinates</string>
+
 </resources>

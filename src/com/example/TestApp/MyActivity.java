@@ -57,4 +57,9 @@ public class MyActivity extends Activity {
         inflater.inflate(R.menu.main_activity_actions, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
+    public void goToGps(View view) {
+        Intent intent = new Intent(this, Coordinates.class);
+        startActivity(intent);
+    }
 }

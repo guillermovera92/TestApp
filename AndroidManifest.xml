@@ -31,6 +31,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.testapp.MainActivity" />
         </activity>
+        <activity android:name="com.example.TestApp.Coordinates"
+                  android:label="@string/coordinates">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.example.testapp.MainActivity" />
+        </activity>
 
     </application>
 </manifest>
